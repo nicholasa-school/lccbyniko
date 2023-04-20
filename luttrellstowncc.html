@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#f1f1f1;padding:15px;">
+  <h1>Luttrellstown CC</h1>
+  <h3>Resize the browser window</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">The Name</div>
+    <div class="menuitem">Information</div>
+    <div class="menuitem">Photo of School</div>
+  </div>
+
+  <div class="main">
+    <h2>Luttrellstown CC</h2>
+    <p>The school is situated on Porterstown Road in Clonsilla, Dublin. It is a school that is eligible by DDLETB to have the use of iPads as an educational aid for students.</p>
+    <img src="https://www.schooldays.ie/i/BA4672A5F95CF523802575FB003CD9FD/Luttrellstown%20Community%20College%2076130P%20(320%20x%20160).jpg" style="width:100%">
+  </div>
+
+  <div class="right">
+    <h2>What?</h2>
+    <p>Luttrellstown CC is also next to a primary school called Scoil Choilm.</p>
+    <h2>Where?</h2>
+    <p>Clonsilla, Dublin 15 (Ireland)</p>
+    <h2>Price?</h2>
+    <p>For the iPads used as educational aid, they are €600.</p>
+  </div>
+</div>
+
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> (c) 2023 Nicholas Algeorge</div>
+
+</body>
+</html>
